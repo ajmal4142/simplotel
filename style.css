@@ -1,0 +1,230 @@
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #FFF6AE, #FFB4EE);;
+}
+
+header{
+    padding: 6px 5vw ;
+    background-color: #f77171;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+    list-style: none;
+}
+header ul li a{
+    color: rgb(1, 1, 1);
+    font-size: 21px;
+    font-weight: 800;
+    font-family: auto;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+li img{
+    cursor: pointer;
+}
+
+ /* header section ends here */
+
+ section{
+    height: 100vh;
+    display: flex;
+ }
+ section:first-of-type div{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+ }
+ 
+ section:first-of-type div div p{
+    line-height: 27px;
+    font-size: 18px;
+ }
+ section:first-of-type div div h1{
+    font-size: 55px;
+    letter-spacing: 6px;
+    align-self: baseline;
+ }
+ section:first-of-type div div button{
+    width: 200px;
+    padding: 15px 0px;
+    border: none;
+    color: #ffffff;
+    background-color: #f77171;
+    align-self: baseline;
+    margin-top: 40px;
+ }
+ section:first-of-type img{
+    object-fit: cover;
+ }
+
+ /* first section completed  */
+
+
+ body > section:nth-of-type(2){
+   display: flex;
+   align-items: center;
+   gap: 56px;
+ }
+
+ div div img{
+   object-fit: cover;
+ }
+ 
+ .first-section{
+   display: flex;
+   margin-top: auto;
+   margin-bottom: auto;
+   margin-left: auto;
+ }
+
+ .first-section div{
+   display: flex; 
+   flex-direction: column; 
+   gap: 10px
+ }
+
+ .first-section > div > img:first-child,
+.first-section > div > img:nth-child(2){
+   max-width: 100%;
+    height: auto;
+    width: 275px; 
+    height: 250px;
+ }
+
+ .first-section > img{
+   margin-left: 27px;
+   width:275px;
+   height:509px;
+ }
+ .second-section{
+   margin-top: auto;
+   margin-bottom: auto;
+   margin-right: auto;
+   width: 36%;
+   background: #f77171;
+   padding-left: 33px;
+ }
+ 
+ .second-section h6:first-child{
+   font-size: 17px; 
+   font-weight: 400
+ }
+ .second-section h6:last-child{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   font-size: 16px;
+   font-weight: 100;
+   cursor: pointer;
+ }
+ .second-section h3{
+   font-size: 55px; 
+   margin-top: 0px; 
+   margin-bottom: 0px;
+   letter-spacing: 4px;
+ }
+
+
+
+ @media (max-width:1100px) {
+   body > section:nth-of-type(2){
+      gap: 20px;
+    }
+   .first-section > div > img:first-child,
+   .first-section > div > img:nth-child(2) , .first-section > img{
+      margin-left: 30px;
+      width: 225px;
+   }
+   .second-section{
+      margin-right: 20px;
+   }
+   .second-section h3{
+      font-size: 35px;
+   }
+   
+ }
+ @media (max-width:875px) {
+   header{
+      padding: 6px 0px ;
+  }
+  header ul li a{
+   font-size: 17px;
+  }
+  body > section:nth-of-type(2){
+   margin: 40px 0px;
+   flex-direction: column;
+  }
+  .first-section{
+   margin-left: inherit;
+  }
+  .second-section{
+   width: 50%;
+  }
+  header ul{
+   padding-left: 0px;
+  }
+ }
+
+ @media (max-width:633px) {
+   section:first-of-type {
+      height: auto;
+      flex-direction: column;
+   }
+   header ul li:not(:last-child) {
+      display: none;
+  }
+  header ul li{
+   margin-right: auto;
+  }
+  section:first-of-type div{
+   width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+  }
+  section:first-of-type div div button{
+   width: 130px;
+  }
+   section:first-of-type img{
+      order: -1;
+      width: 100%;
+   }
+   section:first-of-type div div h1 {
+      font-size: 40px;
+   }
+   
+   .first-section{
+      width: 83%;
+      flex-direction: column;
+   }
+   .second-section h3 {
+      font-size: 27px;
+  }
+   .first-section > img{
+      margin-top: 10px;
+    height: 250px;
+   }
+   .first-section > div > img:first-child, .first-section > div > img:nth-child(2), .first-section > img {
+      width: 100%;
+      margin-left: auto;
+   }
+ }
+
+ @media (max-width:500px) {
+   .second-section{
+      width: 74%;
+      margin-right: 0px;
+   }
+   section:first-of-type div div h1 {
+      font-size: 30px;
+   }
+   section:first-of-type div div p {
+      font-size: 15px;
+   }
+ }
